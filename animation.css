@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  background: lightGray;
+  background-position: fixed;
+}
+
+body {
+  font-family: "Roboto","Oxygen","Ubuntu","Cantarell","Open Sans","Helvetica Neue",sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: normal;
+  color: fade(#fff, 80);
+  font-size: 14px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 0.3em;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.submit {
+  width: 200px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #F1C40F;
+  background-color: #F1C40F;
+  color: white;
+  margin: 50px auto;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+svg {
+  visibility: hidden;
+  width: 35px;
+  height: 35px;
+}
+
+.loading-wrapper {
+  width: 720px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 4px 0 fade(#000, 40);
+}
+
+.loading-wrapper svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.desc {
+  margin-top: 15px;
+}
